@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" id="themeProvider" href="./themes/dark.css" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    
+    <div class="theme">
+        Theme:
+        <select id="selectTheme">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+        </select>
+    </div>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="left-nav">
+                    <div id="home">KI Portfolio</div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-wrapper" onclick="dropDown()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li>
+                        <div id="home" onclick="">Home</div>
+                    </li>
+                    <li>
+                        <div id="about" onclick="">About</div>
+                    </li>
+                    <li>
+                        <div id="requirements" onclick="">Requirements</div>
+                    </li>
+                    <li>
+                        <div id="contact" onclick="">Contact</div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="left-banner">
+                <p>Hi There, <span>I'm</span></p>
+                <h1>Karwan Ismael</h1>
+                <div class="banner-animated-text">
+                    <h3><span>Jr. Web Developer</span></h3>
+                </div>
+                <div class="left-banner-buttons">
+                    <a href="https://github.com/karwanm" target="_blank">Github</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+
+            <div class="right-banner">
+                <div class="right-banner-wrapper">
+                    <div><img src="./assets/img/screen_project.jpg" alt="screen" /></div>
+                    <div><img src="./assets/img/angular_project.jpg" alt="angular" /></div>
+                    <div><img src="./assets/img/react_project.jpg" alt="react" /></div>
+                    <div><img src="./assets/img/tribute.jpg" alt="tribute" /></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h1 class="section-header">About</h1>
+            <div class="about-wrapper">
+                <div class="about-details">
+                    <h1>Jr. Web Developer</h1>
+                    <p>Barber and Self-taught Jr. Web Developer, with the skills to deliver good quality,
+                        functional,responsive
+                        websites. who is able to adapt to new environments, solve problems and work well under pressure.
+                        Passionate about writing clean and neat code, learning, and utilising new skills for creating
+                        projects. Good team player with a positive attitude who is always willing to help, but can also
+                        work alone just as
+                        efficiently.
+                    </p>
+                    <div class="about-details-wrapper">
+                        <h4>Name:<span>Karwan Ismael</span></h4>
+                        <h4>Profile:<span>Jr. Web Developer</span></h4>
+                        <h4>Email:<span>karwan.ismo@gmail.com</span></h4>
+                        <h4>Phone:<span>07447858030</span></h4>
+                        <h4>Location:<span>London - Finsbury Park</span></h4>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="./assets/img/about_section_img.jpg" alt="about image">
+                </div>
+            </div>
+        </section>
+
+        <section class="why">
+            <h1 class="section-header">Why applying for the programme?</h1>
+            <p>Having look at the description, I believe I already have the skills and qualities needed to get up and
+                running in the course quickly. During my research I noticed that Founders and Coders has great reviews
+                about putting talented people in thier dream job and gives them the opportunity to change thier career
+                for better.
+            </p>
+        </section>
+
+        <section class="requirements">
+            <h1 class="section-header">Application Requirements</h1>
+            <div class="requirement-wrapper">
+                <div class="requirement">
+                    <img src="./assets/img/tribute01.jpg" alt="Tribute" />
+                    <a href="https://github.com/KarwanM/tribute" target="_blank">
+                        Tribute
+                    </a>
+                </div>
+                <div class="requirement">
+                    <img src="./assets/img/prompt.jpg" alt="Prompts" />
+                    <a href="https://github.com/KarwanM/prompts" target="_blank">
+                        Prompts
+                    </a>
+                </div>
+                <div class="requirement">
+                    <img src="assets/img/portfolio.jpg" alt="Portfolio" />
+                    <a href="https://github.com/KarwanM/portfolio" target="_blank">
+                        Portfolio
+                    </a>
+                </div>
+                <div class="requirement">
+                    <img src="assets/img/freecodecamp.jpg" alt="Free Code Camp" />
+                    <a href="https://www.freecodecamp.org/Karwan_MI" target="_blank">
+                        Free Code Camp
+                    </a>
+                </div>
+                <span class="prev-slide" onclick="prevSlide()">&lsaquo;</span>
+                <span class="next-slide" onclick="nextSlide()">&rsaquo;</span>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="section-header">Get In Touch</h1>
+            <div class="contact-content">
+                <form action="#">
+                    <input type="text" class="name" placeholder="Name">
+                    <div class="email-wrapper">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <textarea class="message" name="message" id="message" placeholder="Your message ..."></textarea>
+                    <button>Send message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>KI Portfolio &copy; 2022</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

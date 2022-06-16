@@ -1,3 +1,3 @@
 ### `Web application live`
 
-https://karwanm.github.io/Application-Website/
+https://karwanm.github.io/application-website/
